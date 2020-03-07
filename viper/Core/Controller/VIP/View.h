@@ -39,7 +39,7 @@
 /**
  *上级：向上级回调数据
  */
-@property (strong, nonatomic) id<DataReceiver> previousReceiver;
+@property (weak, nonatomic) id<DataReceiver> previousReceiver;
 
 /**
  *本级：数据初始化

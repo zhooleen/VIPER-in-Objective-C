@@ -17,7 +17,7 @@
 
 @property (strong, nonatomic) id<EventHandler> handler;
 
-@property (strong, nonatomic) id<DataReceiver> previousReceiver;
+@property (weak, nonatomic) id<DataReceiver> previousReceiver;
 
 /**
  定义一些常用的功能函数
