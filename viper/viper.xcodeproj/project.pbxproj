@@ -7,13 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CF9C4462413500C00ECDEEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4452413500C00ECDEEA /* AppDelegate.m */; };
-		2CF9C4492413500C00ECDEEA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4482413500C00ECDEEA /* SceneDelegate.m */; };
-		2CF9C44C2413500C00ECDEEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C44B2413500C00ECDEEA /* ViewController.m */; };
-		2CF9C44F2413500C00ECDEEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9C44D2413500C00ECDEEA /* Main.storyboard */; };
-		2CF9C4512413500E00ECDEEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9C4502413500E00ECDEEA /* Assets.xcassets */; };
-		2CF9C4542413500E00ECDEEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9C4522413500E00ECDEEA /* LaunchScreen.storyboard */; };
-		2CF9C4572413500E00ECDEEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4562413500E00ECDEEA /* main.m */; };
+		2C7D3A0A2413C1C60037FD25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7D395E2413C1C50037FD25 /* LaunchScreen.storyboard */; };
+		2C7D3A0B2413C1C60037FD25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7D39612413C1C50037FD25 /* Assets.xcassets */; };
+		2C7D3A0D2413C1C60037FD25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D39632413C1C50037FD25 /* main.m */; };
+		2C7D3A0E2413C1C60037FD25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D39642413C1C50037FD25 /* AppDelegate.m */; };
+		2C7D3A0F2413C1C60037FD25 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C7D39652413C1C50037FD25 /* Info.plist */; };
+		2C7D3A502413C1C60037FD25 /* EventNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A092413C1C60037FD25 /* EventNames.m */; };
+		2C7D3A552413C3030037FD25 /* ThirdPartyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A512413C3030037FD25 /* ThirdPartyAPI.m */; };
+		2C7D3A562413C3030037FD25 /* AppStoreService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A532413C3030037FD25 /* AppStoreService.m */; };
+		2C7D3A5F2413C58F0037FD25 /* ActionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A572413C58F0037FD25 /* ActionTableCell.m */; };
+		2C7D3A602413C58F0037FD25 /* AccountTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A592413C58F0037FD25 /* AccountTableCell.m */; };
+		2C7D3A612413C58F0037FD25 /* AboutTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A5A2413C58F0037FD25 /* AboutTableCell.m */; };
+		2C7D3A622413C58F0037FD25 /* BasicTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A5C2413C58F0037FD25 /* BasicTableCell.m */; };
+		2C7D3A7A2413C5D80037FD25 /* SettingsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A652413C5D80037FD25 /* SettingsPresenter.m */; };
+		2C7D3A7B2413C5D80037FD25 /* SettingsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A662413C5D80037FD25 /* SettingsInteractor.m */; };
+		2C7D3A7C2413C5D80037FD25 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A672413C5D80037FD25 /* SettingsController.m */; };
+		2C7D3A7D2413C5D80037FD25 /* AccountPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A6B2413C5D80037FD25 /* AccountPresenter.m */; };
+		2C7D3A7E2413C5D80037FD25 /* AccountRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A6D2413C5D80037FD25 /* AccountRouter.m */; };
+		2C7D3A7F2413C5D80037FD25 /* AccountInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A6E2413C5D80037FD25 /* AccountInteractor.m */; };
+		2C7D3A802413C5D80037FD25 /* AccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A6F2413C5D80037FD25 /* AccountController.m */; };
+		2C7D3A812413C5D80037FD25 /* AboutInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A742413C5D80037FD25 /* AboutInteractor.m */; };
+		2C7D3A822413C5D80037FD25 /* AboutPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A762413C5D80037FD25 /* AboutPresenter.m */; };
+		2C7D3A832413C5D80037FD25 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A792413C5D80037FD25 /* AboutController.m */; };
+		2C7D3A892413C6B60037FD25 /* UIView+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A852413C6B60037FD25 /* UIView+Geometry.m */; };
+		2C7D3A8A2413C6B60037FD25 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D3A882413C6B60037FD25 /* UIView+Util.m */; };
 		2CF9C4B224135CAA00ECDEEA /* ModelProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B124135CAA00ECDEEA /* ModelProxy.m */; };
 		2CF9C4C0241360DD00ECDEEA /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B5241360DD00ECDEEA /* Logger.m */; };
 		2CF9C4C1241360DD00ECDEEA /* VIPInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B6241360DD00ECDEEA /* VIPInteractor.m */; };
@@ -28,18 +45,52 @@
 
 /* Begin PBXFileReference section */
 		155073657DF3736F7B5C8F05 /* Pods-viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper/Pods-viper.release.xcconfig"; sourceTree = "<group>"; };
+		2C7D395E2413C1C50037FD25 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C7D395F2413C1C50037FD25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2C7D39602413C1C50037FD25 /* Medusa.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Medusa.entitlements; sourceTree = "<group>"; };
+		2C7D39612413C1C50037FD25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C7D39632413C1C50037FD25 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C7D39642413C1C50037FD25 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2C7D39652413C1C50037FD25 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7D3A082413C1C60037FD25 /* EventNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventNames.h; sourceTree = "<group>"; };
+		2C7D3A092413C1C60037FD25 /* EventNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventNames.m; sourceTree = "<group>"; };
+		2C7D3A512413C3030037FD25 /* ThirdPartyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdPartyAPI.m; sourceTree = "<group>"; };
+		2C7D3A522413C3030037FD25 /* AppStoreService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStoreService.h; sourceTree = "<group>"; };
+		2C7D3A532413C3030037FD25 /* AppStoreService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStoreService.m; sourceTree = "<group>"; };
+		2C7D3A542413C3030037FD25 /* ThirdPartyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdPartyAPI.h; sourceTree = "<group>"; };
+		2C7D3A572413C58F0037FD25 /* ActionTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionTableCell.m; sourceTree = "<group>"; };
+		2C7D3A582413C58F0037FD25 /* AccountTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountTableCell.h; sourceTree = "<group>"; };
+		2C7D3A592413C58F0037FD25 /* AccountTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTableCell.m; sourceTree = "<group>"; };
+		2C7D3A5A2413C58F0037FD25 /* AboutTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutTableCell.m; sourceTree = "<group>"; };
+		2C7D3A5B2413C58F0037FD25 /* AboutTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutTableCell.h; sourceTree = "<group>"; };
+		2C7D3A5C2413C58F0037FD25 /* BasicTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicTableCell.m; sourceTree = "<group>"; };
+		2C7D3A5D2413C58F0037FD25 /* BasicTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicTableCell.h; sourceTree = "<group>"; };
+		2C7D3A5E2413C58F0037FD25 /* ActionTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionTableCell.h; sourceTree = "<group>"; };
+		2C7D3A642413C5D80037FD25 /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		2C7D3A652413C5D80037FD25 /* SettingsPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsPresenter.m; sourceTree = "<group>"; };
+		2C7D3A662413C5D80037FD25 /* SettingsInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsInteractor.m; sourceTree = "<group>"; };
+		2C7D3A672413C5D80037FD25 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		2C7D3A682413C5D80037FD25 /* SettingsInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsInteractor.h; sourceTree = "<group>"; };
+		2C7D3A692413C5D80037FD25 /* SettingsPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsPresenter.h; sourceTree = "<group>"; };
+		2C7D3A6B2413C5D80037FD25 /* AccountPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountPresenter.m; sourceTree = "<group>"; };
+		2C7D3A6C2413C5D80037FD25 /* AccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountController.h; sourceTree = "<group>"; };
+		2C7D3A6D2413C5D80037FD25 /* AccountRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountRouter.m; sourceTree = "<group>"; };
+		2C7D3A6E2413C5D80037FD25 /* AccountInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountInteractor.m; sourceTree = "<group>"; };
+		2C7D3A6F2413C5D80037FD25 /* AccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountController.m; sourceTree = "<group>"; };
+		2C7D3A702413C5D80037FD25 /* AccountPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountPresenter.h; sourceTree = "<group>"; };
+		2C7D3A712413C5D80037FD25 /* AccountInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountInteractor.h; sourceTree = "<group>"; };
+		2C7D3A722413C5D80037FD25 /* AccountRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountRouter.h; sourceTree = "<group>"; };
+		2C7D3A742413C5D80037FD25 /* AboutInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutInteractor.m; sourceTree = "<group>"; };
+		2C7D3A752413C5D80037FD25 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		2C7D3A762413C5D80037FD25 /* AboutPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPresenter.m; sourceTree = "<group>"; };
+		2C7D3A772413C5D80037FD25 /* AboutInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutInteractor.h; sourceTree = "<group>"; };
+		2C7D3A782413C5D80037FD25 /* AboutPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPresenter.h; sourceTree = "<group>"; };
+		2C7D3A792413C5D80037FD25 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		2C7D3A852413C6B60037FD25 /* UIView+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Geometry.m"; sourceTree = "<group>"; };
+		2C7D3A862413C6B60037FD25 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
+		2C7D3A872413C6B60037FD25 /* UIView+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Geometry.h"; sourceTree = "<group>"; };
+		2C7D3A882413C6B60037FD25 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
 		2CF9C4412413500C00ECDEEA /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CF9C4442413500C00ECDEEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		2CF9C4452413500C00ECDEEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CF9C4472413500C00ECDEEA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		2CF9C4482413500C00ECDEEA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		2CF9C44A2413500C00ECDEEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CF9C44B2413500C00ECDEEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2CF9C44E2413500C00ECDEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2CF9C4502413500E00ECDEEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2CF9C4532413500E00ECDEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2CF9C4552413500E00ECDEEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CF9C4562413500E00ECDEEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CF9C4832413552B00ECDEEA /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		2CF9C4862413552B00ECDEEA /* Interactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactor.h; sourceTree = "<group>"; };
 		2CF9C4872413552B00ECDEEA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
@@ -84,6 +135,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C7D395D2413C1C50037FD25 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D39612413C1C50037FD25 /* Assets.xcassets */,
+				2C7D39602413C1C50037FD25 /* Medusa.entitlements */,
+				2C7D395E2413C1C50037FD25 /* LaunchScreen.storyboard */,
+				2C7D395F2413C1C50037FD25 /* AppDelegate.h */,
+				2C7D39642413C1C50037FD25 /* AppDelegate.m */,
+				2C7D39632413C1C50037FD25 /* main.m */,
+				2C7D39652413C1C50037FD25 /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		2C7D39662413C1C50037FD25 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A732413C5D80037FD25 /* About */,
+				2C7D3A6A2413C5D80037FD25 /* Account */,
+				2C7D3A632413C5D80037FD25 /* Settings */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2C7D39D22413C1C60037FD25 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A522413C3030037FD25 /* AppStoreService.h */,
+				2C7D3A532413C3030037FD25 /* AppStoreService.m */,
+				2C7D3A542413C3030037FD25 /* ThirdPartyAPI.h */,
+				2C7D3A512413C3030037FD25 /* ThirdPartyAPI.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2C7D39EE2413C1C60037FD25 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A5B2413C58F0037FD25 /* AboutTableCell.h */,
+				2C7D3A5A2413C58F0037FD25 /* AboutTableCell.m */,
+				2C7D3A582413C58F0037FD25 /* AccountTableCell.h */,
+				2C7D3A592413C58F0037FD25 /* AccountTableCell.m */,
+				2C7D3A5E2413C58F0037FD25 /* ActionTableCell.h */,
+				2C7D3A572413C58F0037FD25 /* ActionTableCell.m */,
+				2C7D3A5D2413C58F0037FD25 /* BasicTableCell.h */,
+				2C7D3A5C2413C58F0037FD25 /* BasicTableCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C7D3A072413C1C60037FD25 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A082413C1C60037FD25 /* EventNames.h */,
+				2C7D3A092413C1C60037FD25 /* EventNames.m */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		2C7D3A632413C5D80037FD25 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A642413C5D80037FD25 /* SettingsController.h */,
+				2C7D3A672413C5D80037FD25 /* SettingsController.m */,
+				2C7D3A682413C5D80037FD25 /* SettingsInteractor.h */,
+				2C7D3A662413C5D80037FD25 /* SettingsInteractor.m */,
+				2C7D3A692413C5D80037FD25 /* SettingsPresenter.h */,
+				2C7D3A652413C5D80037FD25 /* SettingsPresenter.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2C7D3A6A2413C5D80037FD25 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A6C2413C5D80037FD25 /* AccountController.h */,
+				2C7D3A6F2413C5D80037FD25 /* AccountController.m */,
+				2C7D3A712413C5D80037FD25 /* AccountInteractor.h */,
+				2C7D3A6E2413C5D80037FD25 /* AccountInteractor.m */,
+				2C7D3A702413C5D80037FD25 /* AccountPresenter.h */,
+				2C7D3A6B2413C5D80037FD25 /* AccountPresenter.m */,
+				2C7D3A722413C5D80037FD25 /* AccountRouter.h */,
+				2C7D3A6D2413C5D80037FD25 /* AccountRouter.m */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		2C7D3A732413C5D80037FD25 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A752413C5D80037FD25 /* AboutController.h */,
+				2C7D3A792413C5D80037FD25 /* AboutController.m */,
+				2C7D3A772413C5D80037FD25 /* AboutInteractor.h */,
+				2C7D3A742413C5D80037FD25 /* AboutInteractor.m */,
+				2C7D3A782413C5D80037FD25 /* AboutPresenter.h */,
+				2C7D3A762413C5D80037FD25 /* AboutPresenter.m */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		2C7D3A842413C6770037FD25 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2C7D3A872413C6B60037FD25 /* UIView+Geometry.h */,
+				2C7D3A852413C6B60037FD25 /* UIView+Geometry.m */,
+				2C7D3A862413C6B60037FD25 /* UIView+Util.h */,
+				2C7D3A882413C6B60037FD25 /* UIView+Util.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		2CF9C4382413500C00ECDEEA = {
 			isa = PBXGroup;
 			children = (
@@ -106,17 +268,12 @@
 		2CF9C4432413500C00ECDEEA /* viper */ = {
 			isa = PBXGroup;
 			children = (
-				2CF9C4442413500C00ECDEEA /* AppDelegate.h */,
-				2CF9C4452413500C00ECDEEA /* AppDelegate.m */,
-				2CF9C4472413500C00ECDEEA /* SceneDelegate.h */,
-				2CF9C4482413500C00ECDEEA /* SceneDelegate.m */,
-				2CF9C44A2413500C00ECDEEA /* ViewController.h */,
-				2CF9C44B2413500C00ECDEEA /* ViewController.m */,
-				2CF9C44D2413500C00ECDEEA /* Main.storyboard */,
-				2CF9C4502413500E00ECDEEA /* Assets.xcassets */,
-				2CF9C4522413500E00ECDEEA /* LaunchScreen.storyboard */,
-				2CF9C4552413500E00ECDEEA /* Info.plist */,
-				2CF9C4562413500E00ECDEEA /* main.m */,
+				2C7D3A842413C6770037FD25 /* Util */,
+				2C7D3A072413C1C60037FD25 /* Event */,
+				2C7D39D22413C1C60037FD25 /* Service */,
+				2C7D39EE2413C1C60037FD25 /* View */,
+				2C7D39662413C1C50037FD25 /* Controller */,
+				2C7D395D2413C1C50037FD25 /* Other */,
 			);
 			path = viper;
 			sourceTree = "<group>";
@@ -272,9 +429,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CF9C4542413500E00ECDEEA /* LaunchScreen.storyboard in Resources */,
-				2CF9C4512413500E00ECDEEA /* Assets.xcassets in Resources */,
-				2CF9C44F2413500C00ECDEEA /* Main.storyboard in Resources */,
+				2C7D3A0F2413C1C60037FD25 /* Info.plist in Resources */,
+				2C7D3A0B2413C1C60037FD25 /* Assets.xcassets in Resources */,
+				2C7D3A0A2413C1C60037FD25 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,42 +491,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7D3A8A2413C6B60037FD25 /* UIView+Util.m in Sources */,
+				2C7D3A0E2413C1C60037FD25 /* AppDelegate.m in Sources */,
+				2C7D3A602413C58F0037FD25 /* AccountTableCell.m in Sources */,
+				2C7D3A7E2413C5D80037FD25 /* AccountRouter.m in Sources */,
+				2C7D3A552413C3030037FD25 /* ThirdPartyAPI.m in Sources */,
+				2C7D3A0D2413C1C60037FD25 /* main.m in Sources */,
 				2CF9C4C2241360DD00ECDEEA /* VIPPresenter.m in Sources */,
 				2CF9C4C82413619400ECDEEA /* VIPBuilder.m in Sources */,
-				2CF9C44C2413500C00ECDEEA /* ViewController.m in Sources */,
+				2C7D3A7D2413C5D80037FD25 /* AccountPresenter.m in Sources */,
+				2C7D3A7A2413C5D80037FD25 /* SettingsPresenter.m in Sources */,
+				2C7D3A612413C58F0037FD25 /* AboutTableCell.m in Sources */,
 				2CF9C4C0241360DD00ECDEEA /* Logger.m in Sources */,
+				2C7D3A7C2413C5D80037FD25 /* SettingsController.m in Sources */,
+				2C7D3A812413C5D80037FD25 /* AboutInteractor.m in Sources */,
 				2CF9C4CB2413625200ECDEEA /* VIPEvent.m in Sources */,
 				2CF9C4C5241360DE00ECDEEA /* VIPController.m in Sources */,
 				2CF9C4C3241360DE00ECDEEA /* VIPRouter.m in Sources */,
-				2CF9C4462413500C00ECDEEA /* AppDelegate.m in Sources */,
+				2C7D3A622413C58F0037FD25 /* BasicTableCell.m in Sources */,
+				2C7D3A502413C1C60037FD25 /* EventNames.m in Sources */,
+				2C7D3A562413C3030037FD25 /* AppStoreService.m in Sources */,
+				2C7D3A7B2413C5D80037FD25 /* SettingsInteractor.m in Sources */,
 				2CF9C4C1241360DD00ECDEEA /* VIPInteractor.m in Sources */,
-				2CF9C4572413500E00ECDEEA /* main.m in Sources */,
+				2C7D3A822413C5D80037FD25 /* AboutPresenter.m in Sources */,
+				2C7D3A892413C6B60037FD25 /* UIView+Geometry.m in Sources */,
+				2C7D3A802413C5D80037FD25 /* AccountController.m in Sources */,
 				2CF9C4C4241360DE00ECDEEA /* SelectorMapping.m in Sources */,
 				2CF9C4B224135CAA00ECDEEA /* ModelProxy.m in Sources */,
-				2CF9C4492413500C00ECDEEA /* SceneDelegate.m in Sources */,
+				2C7D3A7F2413C5D80037FD25 /* AccountInteractor.m in Sources */,
+				2C7D3A5F2413C58F0037FD25 /* ActionTableCell.m in Sources */,
+				2C7D3A832413C5D80037FD25 /* AboutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2CF9C44D2413500C00ECDEEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CF9C44E2413500C00ECDEEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2CF9C4522413500E00ECDEEA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CF9C4532413500E00ECDEEA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2CF9C4582413500E00ECDEEA /* Debug */ = {
@@ -422,7 +577,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -474,7 +629,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -488,12 +643,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = 6AC6UW7HHM;
-				INFOPLIST_FILE = viper/Info.plist;
+				INFOPLIST_FILE = viper/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.none.www.viper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -506,12 +664,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0.1;
 				DEVELOPMENT_TEAM = 6AC6UW7HHM;
-				INFOPLIST_FILE = viper/Info.plist;
+				INFOPLIST_FILE = viper/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.none.www.viper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

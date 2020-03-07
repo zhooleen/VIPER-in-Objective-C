@@ -9,18 +9,19 @@
 #import "Model.h"
 #import "Style.h"
 #import "ViewModel.h"
+#import "ModelProxy.h"
 
 #import "Cell.h"
 
 #import "Event.h"
 #import "View.h"
-#import "Intractor.h"
+#import "Interactor.h"
 #import "Presenter.h"
 #import "Router.h"
 
 #import "VIPEvent.h"
-#import "VIPControlelr.h"
-#import "VIPIntractor.h"
+#import "VIPController.h"
+#import "VIPInteractor.h"
 #import "VIPPresenter.h"
 #import "VIPRouter.h"
 #import "VIPBuilder.h"

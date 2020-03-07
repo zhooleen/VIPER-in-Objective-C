@@ -51,27 +51,6 @@
     [super viewDidLoad];
     [self hideBackBarButtonItemTitle];
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
-//    [self sendEvent:kEventViewDidLoad];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-//    [self sendEvent:kEventViewWillAppear];
-}
-
-- (void) viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-//    [self sendEvent:kEventViewDidAppear];
-}
-
-- (void) viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-//    [self sendEvent:kEventViewWillDisappear];
-}
-
-- (void) viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-//    [self sendEvent:kEventViewDidDisappear];
 }
 
 - (BOOL) prefersStatusBarHidden {
@@ -92,6 +71,7 @@
 }
 
 - (void) exit {
+    [self removeAllObservers];
     if(self.navigationController) {
         [self.navigationController popViewControllerAnimated:YES];
     } else {
