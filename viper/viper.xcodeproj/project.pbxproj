@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF9C4462413500C00ECDEEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4452413500C00ECDEEA /* AppDelegate.m */; };
+		2CF9C4492413500C00ECDEEA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4482413500C00ECDEEA /* SceneDelegate.m */; };
+		2CF9C44C2413500C00ECDEEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C44B2413500C00ECDEEA /* ViewController.m */; };
+		2CF9C44F2413500C00ECDEEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9C44D2413500C00ECDEEA /* Main.storyboard */; };
+		2CF9C4512413500E00ECDEEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9C4502413500E00ECDEEA /* Assets.xcassets */; };
+		2CF9C4542413500E00ECDEEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9C4522413500E00ECDEEA /* LaunchScreen.storyboard */; };
+		2CF9C4572413500E00ECDEEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4562413500E00ECDEEA /* main.m */; };
+		2CF9C4B224135CAA00ECDEEA /* ModelProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B124135CAA00ECDEEA /* ModelProxy.m */; };
+		2CF9C4C0241360DD00ECDEEA /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B5241360DD00ECDEEA /* Logger.m */; };
+		2CF9C4C1241360DD00ECDEEA /* VIPInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B6241360DD00ECDEEA /* VIPInteractor.m */; };
+		2CF9C4C2241360DD00ECDEEA /* VIPPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B7241360DD00ECDEEA /* VIPPresenter.m */; };
+		2CF9C4C3241360DE00ECDEEA /* VIPRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B8241360DD00ECDEEA /* VIPRouter.m */; };
+		2CF9C4C4241360DE00ECDEEA /* SelectorMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4B9241360DD00ECDEEA /* SelectorMapping.m */; };
+		2CF9C4C5241360DE00ECDEEA /* VIPController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4BF241360DD00ECDEEA /* VIPController.m */; };
+		2CF9C4C82413619400ECDEEA /* VIPBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4C72413619400ECDEEA /* VIPBuilder.m */; };
+		2CF9C4CB2413625200ECDEEA /* VIPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4CA2413625200ECDEEA /* VIPEvent.m */; };
+		5B5B6CB74C2EED3B5C9F5672 /* libPods-viper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E83A0E3282FB2BF45B57EC0B /* libPods-viper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		155073657DF3736F7B5C8F05 /* Pods-viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper/Pods-viper.release.xcconfig"; sourceTree = "<group>"; };
+		2CF9C4412413500C00ECDEEA /* viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CF9C4442413500C00ECDEEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2CF9C4452413500C00ECDEEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2CF9C4472413500C00ECDEEA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2CF9C4482413500C00ECDEEA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2CF9C44A2413500C00ECDEEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2CF9C44B2413500C00ECDEEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2CF9C44E2413500C00ECDEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2CF9C4502413500E00ECDEEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CF9C4532413500E00ECDEEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2CF9C4552413500E00ECDEEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF9C4562413500E00ECDEEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CF9C4832413552B00ECDEEA /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		2CF9C4862413552B00ECDEEA /* Interactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Interactor.h; sourceTree = "<group>"; };
+		2CF9C4872413552B00ECDEEA /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		2CF9C4882413552B00ECDEEA /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
+		2CF9C4892413552B00ECDEEA /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		2CF9C48A2413552B00ECDEEA /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		2CF9C4AD2413561C00ECDEEA /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		2CF9C4AE241357C000ECDEEA /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		2CF9C4AF24135A6B00ECDEEA /* Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Style.h; sourceTree = "<group>"; };
+		2CF9C4B024135CAA00ECDEEA /* ModelProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelProxy.h; sourceTree = "<group>"; };
+		2CF9C4B124135CAA00ECDEEA /* ModelProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelProxy.m; sourceTree = "<group>"; };
+		2CF9C4B324135DD500ECDEEA /* Cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		2CF9C4B4241360DD00ECDEEA /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		2CF9C4B5241360DD00ECDEEA /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		2CF9C4B6241360DD00ECDEEA /* VIPInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPInteractor.m; sourceTree = "<group>"; };
+		2CF9C4B7241360DD00ECDEEA /* VIPPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPPresenter.m; sourceTree = "<group>"; };
+		2CF9C4B8241360DD00ECDEEA /* VIPRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPRouter.m; sourceTree = "<group>"; };
+		2CF9C4B9241360DD00ECDEEA /* SelectorMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectorMapping.m; sourceTree = "<group>"; };
+		2CF9C4BA241360DD00ECDEEA /* SelectorMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectorMapping.h; sourceTree = "<group>"; };
+		2CF9C4BB241360DD00ECDEEA /* VIPRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPRouter.h; sourceTree = "<group>"; };
+		2CF9C4BC241360DD00ECDEEA /* VIPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPController.h; sourceTree = "<group>"; };
+		2CF9C4BD241360DD00ECDEEA /* VIPPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPPresenter.h; sourceTree = "<group>"; };
+		2CF9C4BE241360DD00ECDEEA /* VIPInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPInteractor.h; sourceTree = "<group>"; };
+		2CF9C4BF241360DD00ECDEEA /* VIPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPController.m; sourceTree = "<group>"; };
+		2CF9C4C62413619400ECDEEA /* VIPBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VIPBuilder.h; sourceTree = "<group>"; };
+		2CF9C4C72413619400ECDEEA /* VIPBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPBuilder.m; sourceTree = "<group>"; };
+		2CF9C4C92413625200ECDEEA /* VIPEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPEvent.h; sourceTree = "<group>"; };
+		2CF9C4CA2413625200ECDEEA /* VIPEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPEvent.m; sourceTree = "<group>"; };
+		8378D3B5E9EB196FCB337079 /* Pods-viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper/Pods-viper.debug.xcconfig"; sourceTree = "<group>"; };
+		E83A0E3282FB2BF45B57EC0B /* libPods-viper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-viper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF9C43E2413500C00ECDEEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B5B6CB74C2EED3B5C9F5672 /* libPods-viper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CF9C4382413500C00ECDEEA = {
+			isa = PBXGroup;
+			children = (
+				2CF9C45D241354EF00ECDEEA /* Core */,
+				2CF9C4432413500C00ECDEEA /* viper */,
+				2CF9C4422413500C00ECDEEA /* Products */,
+				B2D16CA9E792804C54C7B54B /* Pods */,
+				B940F42F5532DFA42FEF97FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2CF9C4422413500C00ECDEEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4412413500C00ECDEEA /* viper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF9C4432413500C00ECDEEA /* viper */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4442413500C00ECDEEA /* AppDelegate.h */,
+				2CF9C4452413500C00ECDEEA /* AppDelegate.m */,
+				2CF9C4472413500C00ECDEEA /* SceneDelegate.h */,
+				2CF9C4482413500C00ECDEEA /* SceneDelegate.m */,
+				2CF9C44A2413500C00ECDEEA /* ViewController.h */,
+				2CF9C44B2413500C00ECDEEA /* ViewController.m */,
+				2CF9C44D2413500C00ECDEEA /* Main.storyboard */,
+				2CF9C4502413500E00ECDEEA /* Assets.xcassets */,
+				2CF9C4522413500E00ECDEEA /* LaunchScreen.storyboard */,
+				2CF9C4552413500E00ECDEEA /* Info.plist */,
+				2CF9C4562413500E00ECDEEA /* main.m */,
+			);
+			path = viper;
+			sourceTree = "<group>";
+		};
+		2CF9C45D241354EF00ECDEEA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4832413552B00ECDEEA /* Core.h */,
+				2CF9C45E2413552B00ECDEEA /* Model */,
+				2CF9C46D2413552B00ECDEEA /* View */,
+				2CF9C4842413552B00ECDEEA /* Controller */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2CF9C45E2413552B00ECDEEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4AD2413561C00ECDEEA /* Model.h */,
+				2CF9C4AF24135A6B00ECDEEA /* Style.h */,
+				2CF9C4AE241357C000ECDEEA /* ViewModel.h */,
+				2CF9C4B024135CAA00ECDEEA /* ModelProxy.h */,
+				2CF9C4B124135CAA00ECDEEA /* ModelProxy.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CF9C46D2413552B00ECDEEA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4B324135DD500ECDEEA /* Cell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CF9C4842413552B00ECDEEA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4852413552B00ECDEEA /* VIP */,
+				2CF9C48B2413552B00ECDEEA /* Util */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CF9C4852413552B00ECDEEA /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4872413552B00ECDEEA /* Event.h */,
+				2CF9C4882413552B00ECDEEA /* View.h */,
+				2CF9C48A2413552B00ECDEEA /* Presenter.h */,
+				2CF9C4862413552B00ECDEEA /* Interactor.h */,
+				2CF9C4892413552B00ECDEEA /* Router.h */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		2CF9C48B2413552B00ECDEEA /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9C4C92413625200ECDEEA /* VIPEvent.h */,
+				2CF9C4CA2413625200ECDEEA /* VIPEvent.m */,
+				2CF9C4C62413619400ECDEEA /* VIPBuilder.h */,
+				2CF9C4C72413619400ECDEEA /* VIPBuilder.m */,
+				2CF9C4BC241360DD00ECDEEA /* VIPController.h */,
+				2CF9C4BF241360DD00ECDEEA /* VIPController.m */,
+				2CF9C4BE241360DD00ECDEEA /* VIPInteractor.h */,
+				2CF9C4B6241360DD00ECDEEA /* VIPInteractor.m */,
+				2CF9C4BD241360DD00ECDEEA /* VIPPresenter.h */,
+				2CF9C4B7241360DD00ECDEEA /* VIPPresenter.m */,
+				2CF9C4BB241360DD00ECDEEA /* VIPRouter.h */,
+				2CF9C4B8241360DD00ECDEEA /* VIPRouter.m */,
+				2CF9C4B4241360DD00ECDEEA /* Logger.h */,
+				2CF9C4B5241360DD00ECDEEA /* Logger.m */,
+				2CF9C4BA241360DD00ECDEEA /* SelectorMapping.h */,
+				2CF9C4B9241360DD00ECDEEA /* SelectorMapping.m */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B2D16CA9E792804C54C7B54B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8378D3B5E9EB196FCB337079 /* Pods-viper.debug.xcconfig */,
+				155073657DF3736F7B5C8F05 /* Pods-viper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B940F42F5532DFA42FEF97FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E83A0E3282FB2BF45B57EC0B /* libPods-viper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2CF9C4402413500C00ECDEEA /* viper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CF9C45A2413500E00ECDEEA /* Build configuration list for PBXNativeTarget "viper" */;
+			buildPhases = (
+				91A7F6C256B2BBF1A845BEA5 /* [CP] Check Pods Manifest.lock */,
+				2CF9C43D2413500C00ECDEEA /* Sources */,
+				2CF9C43E2413500C00ECDEEA /* Frameworks */,
+				2CF9C43F2413500C00ECDEEA /* Resources */,
+				2820646995B0923A33C881D4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = viper;
+			productName = viper;
+			productReference = 2CF9C4412413500C00ECDEEA /* viper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2CF9C4392413500C00ECDEEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = None;
+				TargetAttributes = {
+					2CF9C4402413500C00ECDEEA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 2CF9C43C2413500C00ECDEEA /* Build configuration list for PBXProject "viper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2CF9C4382413500C00ECDEEA;
+			productRefGroup = 2CF9C4422413500C00ECDEEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2CF9C4402413500C00ECDEEA /* viper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CF9C43F2413500C00ECDEEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF9C4542413500E00ECDEEA /* LaunchScreen.storyboard in Resources */,
+				2CF9C4512413500E00ECDEEA /* Assets.xcassets in Resources */,
+				2CF9C44F2413500C00ECDEEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2820646995B0923A33C881D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-viper/Pods-viper-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper/Pods-viper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91A7F6C256B2BBF1A845BEA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-viper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CF9C43D2413500C00ECDEEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CF9C4C2241360DD00ECDEEA /* VIPPresenter.m in Sources */,
+				2CF9C4C82413619400ECDEEA /* VIPBuilder.m in Sources */,
+				2CF9C44C2413500C00ECDEEA /* ViewController.m in Sources */,
+				2CF9C4C0241360DD00ECDEEA /* Logger.m in Sources */,
+				2CF9C4CB2413625200ECDEEA /* VIPEvent.m in Sources */,
+				2CF9C4C5241360DE00ECDEEA /* VIPController.m in Sources */,
+				2CF9C4C3241360DE00ECDEEA /* VIPRouter.m in Sources */,
+				2CF9C4462413500C00ECDEEA /* AppDelegate.m in Sources */,
+				2CF9C4C1241360DD00ECDEEA /* VIPInteractor.m in Sources */,
+				2CF9C4572413500E00ECDEEA /* main.m in Sources */,
+				2CF9C4C4241360DE00ECDEEA /* SelectorMapping.m in Sources */,
+				2CF9C4B224135CAA00ECDEEA /* ModelProxy.m in Sources */,
+				2CF9C4492413500C00ECDEEA /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2CF9C44D2413500C00ECDEEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF9C44E2413500C00ECDEEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2CF9C4522413500E00ECDEEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CF9C4532413500E00ECDEEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2CF9C4582413500E00ECDEEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2CF9C4592413500E00ECDEEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CF9C45B2413500E00ECDEEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8378D3B5E9EB196FCB337079 /* Pods-viper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC6UW7HHM;
+				INFOPLIST_FILE = viper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.none.www.viper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2CF9C45C2413500E00ECDEEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155073657DF3736F7B5C8F05 /* Pods-viper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6AC6UW7HHM;
+				INFOPLIST_FILE = viper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.none.www.viper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2CF9C43C2413500C00ECDEEA /* Build configuration list for PBXProject "viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF9C4582413500E00ECDEEA /* Debug */,
+				2CF9C4592413500E00ECDEEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2CF9C45A2413500E00ECDEEA /* Build configuration list for PBXNativeTarget "viper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CF9C45B2413500E00ECDEEA /* Debug */,
+				2CF9C45C2413500E00ECDEEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2CF9C4392413500C00ECDEEA /* Project object */;
+}

@@ -1,0 +1,14 @@
+
+platform :ios, '10.0'
+
+target 'viper' do
+  
+  pod 'AFNetworking', '~> 3.0'
+  pod 'SDWebImage', '~> 5.0'
+  pod 'MBProgressHUD', '~> 1.2.0'
+  pod 'iCarousel', '~> 1.8'
+  pod 'SAMKeychain'
+  pod 'MJRefresh'
+
+end
+
