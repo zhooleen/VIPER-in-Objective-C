@@ -1,6 +1,6 @@
 # VIPER-in-Objective-C
 Objective-C实现基于事件的VIPER架构,交互图如下：
-![VIPER.png](https://upload-images.jianshu.io/upload_images/21549447-74e196ec8dbe9de4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![VIPER.png](https://upload-images.jianshu.io/upload_images/21549447-c54e517aad6fe10a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 建模
 ### 事件 Event
@@ -118,13 +118,13 @@ presenter.view = view;
 presenter.router = router;
 ```
 ## 参考资料
-[Objective-C实现基于Event的VIPER架构<1>](https://www.jianshu.com/writer#/notebooks/43173191/notes/61284221)
+[Objective-C实现基于Event的VIPER架构<1>](https://www.jianshu.com/p/c9993713730d)
 
-[Objective-C实现基于Event的VIPER架构<2>](https://www.jianshu.com/writer#/notebooks/43173191/notes/61970038)
+[Objective-C实现基于Event的VIPER架构<2>](https://www.jianshu.com/p/f44ca94586b4)
 
-[Objective-C实现基于Event的VIPER架构<3>](https://www.jianshu.com/writer#/notebooks/43173191/notes/61972515)
+[Objective-C实现基于Event的VIPER架构<3>](https://www.jianshu.com/p/726d615fb94b)
 
-[Objective-C实现基于Event的VIPER架构<4>](https://www.jianshu.com/writer#/notebooks/43173191/notes/61973103)
+[Objective-C实现基于Event的VIPER架构<4>](https://www.jianshu.com/p/ab74989fc903)
 
 [Objective-C实现基于Event的VIPER架构<5>](https://www.jianshu.com/writer#/notebooks/43173191/notes/61973210)
 
