@@ -25,9 +25,7 @@
     SEL sel = [self.eventMapping selectorForKey:event.name];
     if(sel && [self respondsToSelector:sel]) {
         
-        IMP imp = [self methodForSelector:sel];
-        void(*func)(id, SEL, id<Event>) = (void *)imp;
-        func(self, sel, event);
+        [self.eventMapping performSelectorWithTarget:self key:event.name param:event];
         
     } else if([event.name hasPrefix:@"kRoute"]) {
         
@@ -46,9 +44,7 @@
     SEL sel = [self.resultMapping selectorForKey:result.name];
     if(sel && [self respondsToSelector:sel]) {
         
-        IMP imp = [self methodForSelector:sel];
-        void(*func)(id, SEL, id<Result>) = (void *)imp;
-        func(self, sel, result);
+        [self.resultMapping performSelectorWithTarget:self key:result.name param:result];
         
     } else {
         
@@ -78,6 +74,5 @@
          [self.handler handleEvent:event];
     }
 }
-
 
 @end

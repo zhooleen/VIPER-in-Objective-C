@@ -26,4 +26,3 @@
  */
 @protocol ViewModel <Model>
 @end
-

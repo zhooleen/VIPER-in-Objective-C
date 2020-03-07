@@ -6,7 +6,7 @@
 //  Copyright © 2020 VIPER. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Event.h"
 
 /**
  基于Event的处理方式，存在判断name的if else分支较多
@@ -17,6 +17,8 @@
 - (void) registerSelector:(SEL)sel forKey:(NSString*)key;
 
 - (SEL) selectorForKey:(NSString*)key;
+
+- (void) performSelectorWithTarget:(id)obj key:(NSString*)key param:(id)param;
 
 @end
 

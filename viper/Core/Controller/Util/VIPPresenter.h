@@ -13,9 +13,9 @@
 
 @interface VIPPresenter : NSObject <Presenter, DataReceiver>
 
-@property (strong, nonatomic, readonly) SelectorMapping *eventMapping;
-
-@property (strong, nonatomic, readonly) SelectorMapping *resultMapping;
+@property (strong, nonatomic, readonly) SelectorMapping *eventMapping;       //事件与方法的映射
+ 
+@property (strong, nonatomic, readonly) SelectorMapping *resultMapping;      //结果与方法的映射
 
 @property (strong, nonatomic) id<EventHandler> handler;
 

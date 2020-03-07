@@ -62,7 +62,7 @@
 
 - (void) route:(id<Event>)event from:(UIViewController<View> *)controller {
     for (id<Router> router in self.routers) {
-        if([router canRoute:event] && [router respondsToSelector:@selector(route:from:)]) {
+        if([router canRoute:event]) {
             [router route:event from:controller];
         }
     }

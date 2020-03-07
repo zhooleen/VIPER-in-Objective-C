@@ -35,3 +35,20 @@
 }
 
 @end
+
+EventName kEventViewDidLoad         =   @"kEventViewDidLoad";
+EventName kEventViewWillAppear      =   @"kEventViewWillAppear";
+EventName kEventViewDidAppear       =   @"kEventViewDidAppear";
+EventName kEventViewWilldisappear   =   @"kEventViewWilldisappear";
+EventName kEventViewDidDisappear    =   @"kEventViewDidDisappear";
+
+
+/**
+ 常见的响应状态
+ */
+ResultStatus kResultStatusError         =   @"kResultStatusError";
+ResultStatus kResultStatusSuccess       =   @"kResultStatusSuccess";
+ResultStatus kResultStatusWarning       =   @"kResultStatusWarning";
+ResultStatus kResultStatusTimeout       =   @"kResultStatusTimeout";
+ResultStatus kResultStatusNoMoreData    =   @"kResultStatusNoMoreData";
+ResultStatus kResultStatusEmpty         =   @"kResultStatusEmpty";

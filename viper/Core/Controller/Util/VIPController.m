@@ -11,6 +11,7 @@
 
 @interface VIPController ()
 @property (assign, nonatomic) BOOL statusBarHidden;
+@property (strong, nonatomic) NSMutableDictionary *observers;
 @end
 
 @implementation VIPController
@@ -20,7 +21,13 @@
     self = [super init];
     if (self) {
         _resultMapping = [[SelectorMapping alloc] init];
+        _observers = [NSMutableDictionary dictionaryWithCapacity:16];
+
     }
+    return self;
+}
+
+- (UIViewController*) routeSource {
     return self;
 }
 
@@ -46,38 +53,33 @@
     self.view.backgroundColor = [UIColor colorWithWhite:0.95 alpha:1];
 //    [self sendEvent:kEventViewDidLoad];
 }
-//
-//- (void)viewWillAppear:(BOOL)animated {
-//    [super viewWillAppear:animated];
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
 //    [self sendEvent:kEventViewWillAppear];
-//}
-//
-//- (void) viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 //    [self sendEvent:kEventViewDidAppear];
-//}
-//
-//- (void) viewWillDisappear:(BOOL)animated {
-//    [super viewWillDisappear:animated];
+}
+
+- (void) viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
 //    [self sendEvent:kEventViewWillDisappear];
-//}
-//
-//- (void) viewDidDisappear:(BOOL)animated {
-//    [super viewDidDisappear:animated];
+}
+
+- (void) viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
 //    [self sendEvent:kEventViewDidDisappear];
-//}
+}
 
 - (BOOL) prefersStatusBarHidden {
     return self.statusBarHidden;
 }
                        
 - (void) receiveResult:(id<Result>)result {
-    SEL sel = [self.resultMapping selectorForKey:result.name];
-    if(sel && [self respondsToSelector:sel]) {
-        IMP imp = [self methodForSelector:sel];
-        void(*func)(id, SEL, id<Result>) = (void *)imp;
-        func(self, sel, result);
-    }
+    [self.resultMapping performSelectorWithTarget:self key:result.name param:result];
 }
 
 - (void) setStatusBarHidden:(BOOL)hidden {
@@ -131,6 +133,39 @@
 
 - (void) receiveCallbackData:(id)data {
     
+}
+
+
+#pragma mark - Notification
+
+- (void) addObserverForNotificationName:(NSString*)name {
+    __weak typeof(self) that = self;
+    NSObject *observer = [[NSNotificationCenter defaultCenter] addObserverForName:name object:nil queue:[NSOperationQueue mainQueue] usingBlock:^(NSNotification * _Nonnull note) {
+        __strong typeof(that) this = that;
+        NSObject *data = note.object;
+        id<Event> event = [Event eventWithName:name data:data];
+        [this.handler handleEvent:event];
+    }];
+    [self.observers setObject:observer forKey:name];
+}
+
+- (void) removeObserverForNotificationName:(NSString*)name {
+    NSObject *object = [self.observers objectForKey:name];
+    if(object) {
+        [[NSNotificationCenter defaultCenter] removeObserver:object];
+        [self.observers removeObjectForKey:name];
+    }
+}
+
+- (void) removeAllObservers {
+    for (NSObject* obj in self.observers.copy) {
+        [[NSNotificationCenter defaultCenter] removeObserver:obj];
+    }
+    [self.observers removeAllObjects];
+}
+
+- (void) dealloc {
+    [self removeAllObservers];
 }
 
 @end

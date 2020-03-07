@@ -49,4 +49,31 @@
     return sel;
 }
 
+- (void) executeEvnet:(id<Event>)event forObject:(id)obj {
+    SEL sel = [self selectorForKey:event.name];
+    if(sel && [obj respondsToSelector:sel]) {
+        IMP imp = [obj methodForSelector:sel];
+        void(*func)(id, SEL, id<Event>) = (void *)imp;
+        func(obj, sel, event);
+    }
+}
+
+- (void) executeResult:(id<Result>)result forObject:(id)obj {
+    SEL sel = [self selectorForKey:result.name];
+    if(sel && [obj respondsToSelector:sel]) {
+        IMP imp = [obj methodForSelector:sel];
+        void(*func)(id, SEL, id<Result>) = (void *)imp;
+        func(obj, sel, result);
+    }
+}
+
+- (void) performSelectorWithTarget:(id)obj key:(NSString*)key param:(id)param {
+    SEL sel = [self selectorForKey:key];
+    if(sel && [obj respondsToSelector:sel]) {
+        IMP imp = [obj methodForSelector:sel];
+        void(*func)(id, SEL, id) = (void *)imp;
+        func(obj, sel, param);
+    }
+}
+
 @end

@@ -16,16 +16,25 @@
 
 @required
 
+/**
+ 对外公开的界面需要在此得到支持
+ */
 - (BOOL) canRoute:(id<Event>)event;
 
 /**
- 模块间路由使用以下方法
+ 以PUSH的方式路由到指定界面
  */
 - (void) push:(id<Event>)event from:(id<View>)view;
+
+/**
+以PRESENT的方式路由到指定界面
+*/
 - (void) present:(id<Event>)event from:(id<View>)view;
 
-@optional
-//是present还是push，由该router自己实现，一般是模块内部的路由
+/**
+其他路由，如TAB间切换等
+模块内部的路由也使用该方法
+*/
 - (void) route:(id<Event>)event from:(id<View>)view;
 
 @end

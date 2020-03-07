@@ -15,13 +15,4 @@
 
 @property (strong, nonatomic, readonly) SelectorMapping *eventMapping;
 
-/**
- 系统通知的监听
- 1 默认将通知转发给Presenter，由Presenter对通知进行处理后，要么直接更新View，要么转换为另一个事件返还给Interactor
- 2 通知不能放在Presenter中监听，因为其不知道该默认转发给谁
- */
-- (void) addObserverForNotificationName:(NSString*)name;
-- (void) removeObserverForNotificationName:(NSString*)name;
-- (void) removeAllObservers;
-
 @end

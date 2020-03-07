@@ -19,8 +19,6 @@
 
 @end
 
-
-
 /**
  * 事件响应
  */
@@ -49,34 +47,13 @@ typedef void(^ResultCallback)(id<Result> result);
 @end
 
 /**
- * 数据接收器
+ * 响应接收器
  * （1）数据流：Interactor->Presenter->View
  * （2）Presenter、View均是ResultReceiver
  */
 @protocol ResultReceiver <NSObject>
 - (void) receiveResult:(id<Result>)result;
 @end
-
-
-/**
-原始数据在VIPER架构中的流转以及保存：
-Interactor:从数据库、Server等请求数据，并将数据直接传递给Presenter
-Presenter：保存从Interactor获取的数据，并转换为View可展示的Model
-View：只展示视图，不对数据做处理；
-
-原始数据：数据库 -> Interator -> Presenter -> Interactor
-模型数据：Presenter -> View -> Presenter
-
-
-事件数据在VIPER架构中的流转以及保存：
-View：转发用户操作，携带用户输入数据或者相关模型数据
-Presenter：将用户输入数据或者相关模型数据转换为Interactor能处理的数据，并保存
-Interactor：将数据插入数据库或者上传Server
-
-事件数据：View -> Presenter -> Interactor -> 数据库
-
-*/
-
 
 /**
  中间件 Middleware
@@ -104,3 +81,10 @@ Interactor：将数据插入数据库或者上传Server
 - (void) receiveInitialData:(id)data;
 - (void) receiveCallbackData:(id)data;
 @end
+
+
+typedef NSString* EventName;
+typedef NSString* RoutingName;
+typedef NSString* NotificationName;
+typedef NSString* ResultStatus;
+
