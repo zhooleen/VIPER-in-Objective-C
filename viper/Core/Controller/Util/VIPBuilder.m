@@ -1,9 +1,9 @@
 //
 //  VIPBuilder.m
-//  HaoTiger
+//  VIPER
 //
-//  Created by none on 2020/2/10.
-//  Copyright © 2020 NONE. All rights reserved.
+//  Created by zhooleen on 2020/2/10.
+//  Copyright © 2020 VIPER. All rights reserved.
 //
 
 #import "VIPBuilder.h"

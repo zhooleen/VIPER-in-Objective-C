@@ -1,9 +1,9 @@
 //
 //  Core.h
-//  HaoTiger
+//  VIPER
 //
-//  Created by none on 2020/2/7.
-//  Copyright © 2020 NONE. All rights reserved.
+//  Created by zhooleen on 2020/2/7.
+//  Copyright © 2020 VIPER. All rights reserved.
 //
 
 #import "Model.h"

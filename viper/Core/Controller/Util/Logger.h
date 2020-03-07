@@ -1,9 +1,9 @@
 //
 //  Logger.h
-//  HaoTiger
+//  VIPER
 //
 //  Created by zlpro on 2020/3/6.
-//  Copyright © 2020 NONE. All rights reserved.
+//  Copyright © 2020 VIPER. All rights reserved.
 //
 
 #import "Event.h"

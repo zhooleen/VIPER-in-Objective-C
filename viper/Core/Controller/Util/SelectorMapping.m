@@ -1,9 +1,9 @@
 //
 //  SelectorMapping.m
-//  HaoTiger
+//  VIPER
 //
-//  Created by none on 2020/2/28.
-//  Copyright © 2020 NONE. All rights reserved.
+//  Created by zhooleen on 2020/2/28.
+//  Copyright © 2020 VIPER. All rights reserved.
 //
 
 #import "SelectorMapping.h"

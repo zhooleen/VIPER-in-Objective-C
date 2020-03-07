@@ -1,9 +1,9 @@
 //
 //  VIPController.h
-//  HaoTiger
+//  VIPER
 //
-//  Created by none on 2020/1/21.
-//  Copyright © 2020 NONE. All rights reserved.
+//  Created by zhooleen on 2020/1/21.
+//  Copyright © 2020 VIPER. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
