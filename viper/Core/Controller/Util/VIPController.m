@@ -58,7 +58,7 @@
 }
                        
 - (void) receiveResult:(id<Result>)result {
-    [self.resultMapping performSelectorWithTarget:self key:result.name param:result];
+    [self.resultMapping receiveResult:result forReceiver:self];
 }
 
 - (void) setStatusBarHidden:(BOOL)hidden {

@@ -1,5 +1,5 @@
 # VIPER-in-Objective-C
-Objective-C实现基于事件的VIPER架构,交互图如下：
+VIPER架构中各组件的分工严格遵循单一职责原则。作者实现了基于事件的松耦合VIPER架构，其各组件的职责、交互如下所示：
 ![VIPER.png](https://upload-images.jianshu.io/upload_images/21549447-c54e517aad6fe10a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 建模
@@ -23,7 +23,7 @@ Result的回传可以是同步的，也可以是异步的。
 @end
 ```
 ### 事件处理 EventHandler
-事件产生后，交给时间处理器去处理。如View上的点击事件交给Presenter处理，Presenter可再将该事件转发给Interactor。
+事件产生后，交给事件处理器去处理。如View上的点击事件交给Presenter处理，Presenter可再将该事件转发给Interactor。
 ``` Objective C
 @protocol EventHandler <NSObject>
 - (void) handleEvent:(id<Event>)event;

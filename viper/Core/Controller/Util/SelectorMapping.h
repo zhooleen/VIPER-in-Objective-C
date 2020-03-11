@@ -14,11 +14,21 @@
  */
 @interface SelectorMapping : NSObject
 
+/**
+ event.name与selector映射
+ */
 - (void) registerSelector:(SEL)sel forKey:(NSString*)key;
-
 - (SEL) selectorForKey:(NSString*)key;
 
-- (void) performSelectorWithTarget:(id)obj key:(NSString*)key param:(id)param;
+/**
+ 代handler执行handleEvent
+ */
+- (void) handleEvent:(id<Event>)event forHandler:(id<EventHandler>)handler;
+
+/**
+ 代receiver执行receiveResult
+ */
+- (void) receiveResult:(id<Result>)result forReceiver:(id<ResultReceiver>)receiver;
 
 @end
 

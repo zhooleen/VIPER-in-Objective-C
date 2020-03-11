@@ -11,6 +11,7 @@
 #import "View.h"
 /**
  *Router 路由：负责Controller之间的切换
+ *Router 是一个模块的入口，需要声明该模块中有哪些界面，这些界面需要哪些数据进行初始化
  */
 @protocol Router <NSObject>
 

@@ -25,7 +25,7 @@
     SEL sel = [self.eventMapping selectorForKey:event.name];
     if(sel && [self respondsToSelector:sel]) {
         
-        [self.eventMapping performSelectorWithTarget:self key:event.name param:event];
+        [self.eventMapping handleEvent:event forHandler:self];
         
     } else if([event.name hasPrefix:@"kRoute"]) {
         
@@ -44,7 +44,7 @@
     SEL sel = [self.resultMapping selectorForKey:result.name];
     if(sel && [self respondsToSelector:sel]) {
         
-        [self.resultMapping performSelectorWithTarget:self key:result.name param:result];
+        [self.resultMapping receiveResult:result forReceiver:self];
         
     } else {
         

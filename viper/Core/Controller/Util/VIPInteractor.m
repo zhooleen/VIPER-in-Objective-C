@@ -12,7 +12,7 @@
 @implementation VIPInteractor 
 
 - (void) handleEvent:(id<Event>)event {
-    [self.eventMapping performSelectorWithTarget:self key:event.name param:event];
+    [self.eventMapping handleEvent:event forHandler:self];
 }
 
 - (instancetype)init

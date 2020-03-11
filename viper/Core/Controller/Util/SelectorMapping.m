@@ -49,24 +49,6 @@
     return sel;
 }
 
-- (void) executeEvnet:(id<Event>)event forObject:(id)obj {
-    SEL sel = [self selectorForKey:event.name];
-    if(sel && [obj respondsToSelector:sel]) {
-        IMP imp = [obj methodForSelector:sel];
-        void(*func)(id, SEL, id<Event>) = (void *)imp;
-        func(obj, sel, event);
-    }
-}
-
-- (void) executeResult:(id<Result>)result forObject:(id)obj {
-    SEL sel = [self selectorForKey:result.name];
-    if(sel && [obj respondsToSelector:sel]) {
-        IMP imp = [obj methodForSelector:sel];
-        void(*func)(id, SEL, id<Result>) = (void *)imp;
-        func(obj, sel, result);
-    }
-}
-
 - (void) performSelectorWithTarget:(id)obj key:(NSString*)key param:(id)param {
     SEL sel = [self selectorForKey:key];
     if(sel && [obj respondsToSelector:sel]) {
@@ -75,5 +57,14 @@
         func(obj, sel, param);
     }
 }
+
+- (void) handleEvent:(id<Event>)event forHandler:(id<EventHandler>)handler {
+    [self performSelectorWithTarget:handler key:event.name param:event];
+}
+
+- (void) receiveResult:(id<Result>)result forReceiver:(id<ResultReceiver>)receiver {
+    [self performSelectorWithTarget:receiver key:result.name param:result];
+}
+
 
 @end
