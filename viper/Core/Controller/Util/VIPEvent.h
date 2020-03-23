@@ -47,6 +47,12 @@ FOUNDATION_EXTERN EventName kEventViewDidAppear;
 FOUNDATION_EXTERN EventName kEventViewWilldisappear;
 FOUNDATION_EXTERN EventName kEventViewDidDisappear;
 
+/**
+界面初始化、以及界面之间的回调
+*/
+FOUNDATION_EXTERN EventName kEventInitialize;
+FOUNDATION_EXTERN EventName kEventCalback;
+
 
 /**
  常见的响应状态

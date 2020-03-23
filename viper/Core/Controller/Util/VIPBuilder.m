@@ -15,6 +15,7 @@
 #import "VIPInteractor.h"
 #import "VIPRouter.h"
 #import "Logger.h"
+#import "VIPEvent.h"
 
 @implementation VIPBuilder
 
@@ -58,13 +59,14 @@
     presenter.view = view;
     
     //VIP参数初始化
-    if(self.initialData && [view respondsToSelector:@selector(initialReceiver)]) {
-        [view.initialReceiver receiveInitialData:self.initialData];
+    if(self.initialData) {
+        id<Event> event = [Event eventWithName:kEventInitialize data:self.initialData];
+        [view handleEvent:event];
     }
     
     //VIP参数回调
-    if(self.previous && [self.previous respondsToSelector:@selector(callbackReceiver)]) {
-        view.previousReceiver = self.previous.callbackReceiver;
+    if(self.previous) {
+        view.receiver = self.previous;
     }
     
     return view;

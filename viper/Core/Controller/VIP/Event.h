@@ -67,22 +67,6 @@ typedef void(^ResultCallback)(id<Result> result);
 
 @end
 
-/**
- *VIP之间参数传递
- *初始：上级向本级传递初始化参数
- *回调：下级向本级传递回调的参数
- *
- *VIP栈：上级 -> 本级 -> 下级
- *
- *角色：一般由Presenter或者View担当DataReceiver角色
- */
-@protocol DataReceiver <NSObject>
-@optional
-- (void) receiveInitialData:(id)data;
-- (void) receiveCallbackData:(id)data;
-@end
-
-
 typedef NSString* EventName;
 typedef NSString* RoutingName;
 typedef NSString* NotificationName;

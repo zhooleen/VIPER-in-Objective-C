@@ -22,34 +22,12 @@
  *（3）本级通过previousReceiver向上级回调数据
  */
 
-@protocol View <ResultReceiver>
-
-/**
- *事件处理
- */
-@property (strong, nonatomic) id<EventHandler> handler;
+@protocol View <Middleware>
 
 /**
  路由源界面
  */
 - (UIViewController*) routeSource;
-
-@optional
-
-/**
- *上级：向上级回调数据
- */
-@property (weak, nonatomic) id<DataReceiver> previousReceiver;
-
-/**
- *本级：数据初始化
- */
-- (id<DataReceiver>) initialReceiver;
-
-/**
- *本级：接收下一级回调的数据
- */
-- (id<DataReceiver>) callbackReceiver;
 
 @end
 

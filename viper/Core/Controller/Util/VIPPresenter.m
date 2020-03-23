@@ -53,14 +53,6 @@
     }
 }
 
-- (void) receiveInitialData:(id)data {
-    
-}
-
-- (void) receiveCallbackData:(id)data {
-    
-}
-
 - (void) sendEvent:(NSString*)name {
     if(self.handler) {
         id<Event> event = [Event eventWithName:name];

@@ -42,6 +42,9 @@ EventName kEventViewDidAppear       =   @"kEventViewDidAppear";
 EventName kEventViewWilldisappear   =   @"kEventViewWilldisappear";
 EventName kEventViewDidDisappear    =   @"kEventViewDidDisappear";
 
+EventName kEventInitialize  =   @"kEventInitialize";
+EventName kEventCalback     =   @"kEventCalback";
+
 
 /**
  常见的响应状态

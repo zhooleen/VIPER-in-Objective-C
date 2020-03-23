@@ -27,14 +27,11 @@
     return self;
 }
 
-- (UIViewController*) routeSource {
-    return self;
-}
-
 - (instancetype) initWithCoder:(NSCoder *)coder {
     self = [super initWithCoder:coder];
     if (self) {
         _resultMapping = [[SelectorMapping alloc] init];
+        _observers = [NSMutableDictionary dictionaryWithCapacity:16];
     }
     return self;
 }
@@ -43,6 +40,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         _resultMapping = [[SelectorMapping alloc] init];
+        _observers = [NSMutableDictionary dictionaryWithCapacity:16];
     }
     return self;
 }
@@ -56,10 +54,27 @@
 - (BOOL) prefersStatusBarHidden {
     return self.statusBarHidden;
 }
+
+#pragma mark - VIPER
+
+- (UIViewController*) routeSource {
+    return self;
+}
                        
 - (void) receiveResult:(id<Result>)result {
+    if([kEventCalback isEqualToString:result.name]) {
+        [self.handler handleEvent:result];
+    }
     [self.resultMapping receiveResult:result forReceiver:self];
 }
+
+- (void) handleEvent:(id<Event>)event {
+    if([kEventInitialize isEqualToString:event.name]) {
+        [self.handler handleEvent:event];
+    }
+}
+
+#pragma mark - UTIL
 
 - (void) setStatusBarHidden:(BOOL)hidden {
     _statusBarHidden = hidden;
@@ -92,29 +107,6 @@
         [self.handler handleEvent:event];
     }
 }
-
-- (id<DataReceiver>) initialReceiver {
-    if(self.handler && [self.handler conformsToProtocol:@protocol(DataReceiver)]) {
-        return (id<DataReceiver>)self.handler;
-    }
-    return (id<DataReceiver>)self;
-}
-
-- (id<DataReceiver>) callbackReceiver {
-    if(self.handler && [self.handler conformsToProtocol:@protocol(DataReceiver)]) {
-        return (id<DataReceiver>)self.handler;
-    }
-    return (id<DataReceiver>)self;
-}
-
-- (void) receiveInitialData:(id)data {
-    
-}
-
-- (void) receiveCallbackData:(id)data {
-    
-}
-
 
 #pragma mark - Notification
 

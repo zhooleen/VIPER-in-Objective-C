@@ -11,7 +11,7 @@
 #import "Router.h"
 #import "SelectorMapping.h"
 
-@interface VIPPresenter : NSObject <Presenter, DataReceiver>
+@interface VIPPresenter : NSObject <Presenter>
 
 @property (strong, nonatomic, readonly) SelectorMapping *eventMapping;       //事件与方法的映射
  

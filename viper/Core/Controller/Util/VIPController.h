@@ -11,13 +11,13 @@
 #import "View.h"
 #import "SelectorMapping.h"
 
-@interface VIPController : UIViewController <View, DataReceiver>
+@interface VIPController : UIViewController <View>
 
 @property (strong, nonatomic, readonly) SelectorMapping *resultMapping;
 
 @property (strong, nonatomic) id<EventHandler> handler;
 
-@property (weak, nonatomic) id<DataReceiver> previousReceiver;
+@property (weak, nonatomic) id<ResultReceiver> receiver;
 
 /**
  定义一些常用的功能函数
