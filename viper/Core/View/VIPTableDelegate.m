@@ -41,10 +41,11 @@
         UIView<Cell> *cell = (UIView<Cell>*)[tableView dequeueReusableHeaderFooterViewWithIdentifier:vm.header.reuseIdentifier];
         if(!cell) {
             Class klass = NSClassFromString(vm.header.reuseIdentifier);
-            CGSize size = [klass cellSizeWithModel:vm];
+            CGSize size = [klass cellSizeWithModel:vm.header];
             cell = [[klass alloc] initWithFrame:(CGRect){CGPointZero, size}];
         }
-        [cell updateWithModel:vm];
+        [cell updateWithModel:vm.header];
+        return cell;
     }
     return nil;
 }
@@ -55,10 +56,11 @@
         UIView<Cell> *cell = (UIView<Cell>*)[tableView dequeueReusableHeaderFooterViewWithIdentifier:vm.footer.reuseIdentifier];
         if(!cell) {
             Class klass = NSClassFromString(vm.footer.reuseIdentifier);
-            CGSize size = [klass cellSizeWithModel:vm];
+            CGSize size = [klass cellSizeWithModel:vm.footer];
             cell = [[klass alloc] initWithFrame:(CGRect){CGPointZero, size}];
         }
-        [cell updateWithModel:vm];
+        [cell updateWithModel:vm.footer];
+        return cell;
     }
     return nil;
 }
@@ -72,9 +74,9 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
     id<SectionViewModel> vm = [self.page.sections objectAtIndex:section];
-    if(vm.header) {
-        Class klass = NSClassFromString(vm.header.reuseIdentifier);
-        CGSize size = [klass cellSizeWithModel:vm.header];
+    if(vm.footer) {
+        Class klass = NSClassFromString(vm.footer.reuseIdentifier);
+        CGSize size = [klass cellSizeWithModel:vm.footer];
         return size.height;
     }
     return 0.01;
@@ -82,9 +84,9 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     id<SectionViewModel> vm = [self.page.sections objectAtIndex:section];
-    if(vm.footer) {
-        Class klass = NSClassFromString(vm.footer.reuseIdentifier);
-        CGSize size = [klass cellSizeWithModel:vm.footer];
+    if(vm.header) {
+        Class klass = NSClassFromString(vm.header.reuseIdentifier);
+        CGSize size = [klass cellSizeWithModel:vm.header];
         return size.height;
     }
     return (section == 0)?0.01:20;
