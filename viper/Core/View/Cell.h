@@ -18,12 +18,12 @@
 /**
 区域中CELL的某个事件被触发
 */
-- (void) onTriggerAction:(NSString*)action ofCell:(id<CellViewModel>)cell inSection:(id<SectionViewModel>)section;
+- (void) onTriggerEvent:(id<Event>)event ofCell:(id<CellViewModel>)cell inSection:(id<SectionViewModel>)section;
 
 /**
 区域中Header/Footer的某个事件被触发
 */
-- (void) onTriggerAttachmentAction:(NSString*)action inSection:(id<SectionViewModel>)section;
+- (void) onTriggerAttachmentEvent:(id<Event>)event inSection:(id<SectionViewModel>)section;
 
 @end
 

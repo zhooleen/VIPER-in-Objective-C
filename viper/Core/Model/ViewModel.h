@@ -72,6 +72,7 @@
  有时候一个Section作为一个Cell来处理
  */
 @protocol SectionViewModel <CellViewModel>
+@property (strong, nonatomic) NSNumber *asCell;//是否作为一个整体考虑
 @property (strong, nonatomic) NSArray<id<CellViewModel>> *models;
 @end
 

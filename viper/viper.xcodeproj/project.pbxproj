@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C6510E42429DF690000B2DB /* VIPTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6510E32429DF690000B2DB /* VIPTableDelegate.m */; };
 		2C7D3A0A2413C1C60037FD25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C7D395E2413C1C50037FD25 /* LaunchScreen.storyboard */; };
 		2C7D3A0B2413C1C60037FD25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C7D39612413C1C50037FD25 /* Assets.xcassets */; };
 		2C7D3A0D2413C1C60037FD25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7D39632413C1C50037FD25 /* main.m */; };
@@ -45,6 +46,9 @@
 
 /* Begin PBXFileReference section */
 		155073657DF3736F7B5C8F05 /* Pods-viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper/Pods-viper.release.xcconfig"; sourceTree = "<group>"; };
+		2C6510E22429DF690000B2DB /* VIPTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPTableDelegate.h; sourceTree = "<group>"; };
+		2C6510E32429DF690000B2DB /* VIPTableDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPTableDelegate.m; sourceTree = "<group>"; };
+		2C6510E52429E27A0000B2DB /* Animating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animating.h; sourceTree = "<group>"; };
 		2C7D395E2413C1C50037FD25 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C7D395F2413C1C50037FD25 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C7D39602413C1C50037FD25 /* Medusa.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Medusa.entitlements; sourceTree = "<group>"; };
@@ -305,6 +309,9 @@
 			isa = PBXGroup;
 			children = (
 				2CF9C4B324135DD500ECDEEA /* Cell.h */,
+				2C6510E52429E27A0000B2DB /* Animating.h */,
+				2C6510E22429DF690000B2DB /* VIPTableDelegate.h */,
+				2C6510E32429DF690000B2DB /* VIPTableDelegate.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -518,6 +525,7 @@
 				2C7D3A802413C5D80037FD25 /* AccountController.m in Sources */,
 				2CF9C4C4241360DE00ECDEEA /* SelectorMapping.m in Sources */,
 				2CF9C4B224135CAA00ECDEEA /* ModelProxy.m in Sources */,
+				2C6510E42429DF690000B2DB /* VIPTableDelegate.m in Sources */,
 				2C7D3A7F2413C5D80037FD25 /* AccountInteractor.m in Sources */,
 				2C7D3A5F2413C58F0037FD25 /* ActionTableCell.m in Sources */,
 				2C7D3A832413C5D80037FD25 /* AboutController.m in Sources */,

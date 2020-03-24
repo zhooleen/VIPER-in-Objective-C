@@ -46,15 +46,11 @@ Result的回传可以是同步的，也可以是异步的。
 @end
 ```
 ### 初始化与回调
-从A路由到B，需要设置B的初始状态；
-从B退回到A，B的结果需要回调给A。
-``` Objective C
-@protocol DataReceiver <NSObject>
-@optional
-- (void) receiveInitialData:(id)data; //初始化
-- (void) receiveCallbackData:(id)data;//结果回调
-@end
-```
+	从A路由到B，需要设置B的初始状态；
+	从B退回到A，B的结果需要回调给A。
+	将初始化封装成初始化事件，由EventHandler处理；
+	将界面结果回调封装成初始化响应，由ResultHandler接收并处理。
+
 ### View
 View的职责：
 1. 对UI的创建、展示、动画、样式等做控制
@@ -64,13 +60,8 @@ View的职责：
 5. 接收后一个界面回调的数据
 5. 界面退出时，将结果回调给前一个界面
 ``` Objective C
-@protocol View <ResultReceiver>
-@property (strong, nonatomic) id<EventHandler> handler;//中间件
+@protocol View <Middleware>
 - (UIViewController*) routeSource;//一般是View本身
-@optional
-@property (weak, nonatomic) id<DataReceiver> previousReceiver;
-- (id<DataReceiver>) initialReceiver;
-- (id<DataReceiver>) callbackReceiver;
 @end
 ```
 ### Presenter
