@@ -25,7 +25,7 @@
     return self;
 }
 
-- (BOOL) canRoute:(id<Event>)event {
+- (BOOL) canRoute:(id<Event>)event type:(RoutingType)type{
     NSArray *names = @[kRoute2About,
                        kRoute2Settings];
     if([names containsObject:event.name]) {
