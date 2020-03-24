@@ -74,6 +74,8 @@
 @protocol SectionViewModel <CellViewModel>
 @property (strong, nonatomic) NSNumber *asCell;//是否作为一个整体考虑
 @property (strong, nonatomic) NSArray<id<CellViewModel>> *models;
+@property (strong, nonatomic) id<CellViewModel> header;
+@property (strong, nonatomic) id<CellViewModel> footer;
 @end
 
 @protocol PageViewModel <ViewModel>

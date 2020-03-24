@@ -35,6 +35,34 @@
     return cell;
 }
 
+- (UIView*) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    id<SectionViewModel> vm = [self.page.sections objectAtIndex:section];
+    if(vm.header) {
+        UIView<Cell> *cell = (UIView<Cell>*)[tableView dequeueReusableHeaderFooterViewWithIdentifier:vm.header.reuseIdentifier];
+        if(!cell) {
+            Class klass = NSClassFromString(vm.header.reuseIdentifier);
+            CGSize size = [klass cellSizeWithModel:vm];
+            cell = [[klass alloc] initWithFrame:(CGRect){CGPointZero, size}];
+        }
+        [cell updateWithModel:vm];
+    }
+    return nil;
+}
+
+- (UIView*) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    id<SectionViewModel> vm = [self.page.sections objectAtIndex:section];
+    if(vm.footer) {
+        UIView<Cell> *cell = (UIView<Cell>*)[tableView dequeueReusableHeaderFooterViewWithIdentifier:vm.footer.reuseIdentifier];
+        if(!cell) {
+            Class klass = NSClassFromString(vm.footer.reuseIdentifier);
+            CGSize size = [klass cellSizeWithModel:vm];
+            cell = [[klass alloc] initWithFrame:(CGRect){CGPointZero, size}];
+        }
+        [cell updateWithModel:vm];
+    }
+    return nil;
+}
+
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     id<CellViewModel> item = [self modelAtIndexPath:indexPath];
     Class klass = NSClassFromString(item.reuseIdentifier);
@@ -43,10 +71,22 @@
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    id<SectionViewModel> vm = [self.page.sections objectAtIndex:section];
+    if(vm.header) {
+        Class klass = NSClassFromString(vm.header.reuseIdentifier);
+        CGSize size = [klass cellSizeWithModel:vm.header];
+        return size.height;
+    }
     return 0.01;
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    id<SectionViewModel> vm = [self.page.sections objectAtIndex:section];
+    if(vm.footer) {
+        Class klass = NSClassFromString(vm.footer.reuseIdentifier);
+        CGSize size = [klass cellSizeWithModel:vm.footer];
+        return size.height;
+    }
     return (section == 0)?0.01:20;
 }
 
@@ -69,6 +109,34 @@
 - (void) tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     if([cell conformsToProtocol:@protocol(Animating)]) {
         id<Animating> an = (id<Animating>)cell;
+        [an stopAnimating];
+    }
+}
+
+- (void) tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    if([view conformsToProtocol:@protocol(Animating)]) {
+        id<Animating> an = (id<Animating>)view;
+        [an startAnimating];
+    }
+}
+
+- (void) tableView:(UITableView *)tableView didEndDisplayingHeaderView:(UIView *)view forSection:(NSInteger)section {
+    if([view conformsToProtocol:@protocol(Animating)]) {
+        id<Animating> an = (id<Animating>)view;
+        [an stopAnimating];
+    }
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayFooterView:(nonnull UIView *)view forSection:(NSInteger)section {
+    if([view conformsToProtocol:@protocol(Animating)]) {
+        id<Animating> an = (id<Animating>)view;
+        [an startAnimating];
+    }
+}
+
+- (void) tableView:(UITableView *)tableView didEndDisplayingFooterView:(UIView *)view forSection:(NSInteger)section {
+    if([view conformsToProtocol:@protocol(Animating)]) {
+        id<Animating> an = (id<Animating>)view;
         [an stopAnimating];
     }
 }
