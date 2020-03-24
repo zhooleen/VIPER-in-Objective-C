@@ -35,9 +35,9 @@
     return mgr;
 }
 
-- (BOOL) canRoute:(id<Event>)event {
+- (BOOL) canRoute:(id<Event>)event type:(RoutingType)type{
     for (id<Router> router in self.routers) {
-        if([router canRoute:event]) {
+        if([router canRoute:event type:type]) {
             return YES;
         }
     }
@@ -46,7 +46,7 @@
 
 - (void) push:(id<Event>)event from:(UIViewController<View> *)controller {
     for (id<Router> router in self.routers) {
-        if([router canRoute:event]) {
+        if([router canRoute:event type:PushRouting]) {
             [router push:event from:controller];
         }
     }
@@ -54,7 +54,7 @@
 
 - (void) present:(id<Event>)event from:(UIViewController<View> *)controller {
     for (id<Router> router in self.routers) {
-        if([router canRoute:event]) {
+        if([router canRoute:event type:PresentRouting]) {
             [router present:event from:controller];
         }
     }
@@ -62,7 +62,7 @@
 
 - (void) route:(id<Event>)event from:(UIViewController<View> *)controller {
     for (id<Router> router in self.routers) {
-        if([router canRoute:event]) {
+        if([router canRoute:event type:AnyRouting]) {
             [router route:event from:controller];
         }
     }
