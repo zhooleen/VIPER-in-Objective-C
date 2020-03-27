@@ -23,7 +23,7 @@
 /**
 区域中Header/Footer的某个事件被触发
 */
-- (void) onTriggerAttachmentEvent:(id<Event>)event inSection:(id<SectionViewModel>)section;
+- (void) onTriggerEvent:(id<Event>)event inAttachment:(id<CellViewModel>)attachment;
 
 @end
 
@@ -45,13 +45,13 @@
 /**
   区块部件：UITableViewCell / UICollectionViewCell 中的一个Section
  */
-@protocol SectionCell <Cell>
+@protocol Section <Cell>
 
 @end
 
 /**
   附件：UITableViewCell / UICollectionViewCell 中的HeaderView、FooterView
  */
-@protocol SectionAttachment <Cell>
+@protocol Attachment <Cell>
 
 @end

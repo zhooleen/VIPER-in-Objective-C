@@ -157,12 +157,11 @@
     }
 }
 
-- (void) onTriggerAttachmentEvent:(id<Event>)event inSection:(id<SectionViewModel>)section {
-    if(self.delegate && [self.delegate respondsToSelector:@selector(onTriggerAttachmentEvent:inSection:)]) {
-        [self.delegate onTriggerAttachmentEvent:event inSection:section];
+- (void) onTriggerEvent:(id<Event>)event inAttachment:(id<CellViewModel>)attachment {
+    if(self.delegate && [self.delegate respondsToSelector:@selector(onTriggerEvent:inAttachment:)]) {
+        [self.delegate onTriggerEvent:event inAttachment:attachment];
     }
 }
-
 
 #pragma mark -
 
