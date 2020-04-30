@@ -26,13 +26,13 @@
     NSDictionary *model1 = @{@"reuseIdentifier":@"BasicTableCell",
                             @"icon":@"icon_upgrade",
                             @"title":@"升级",
-                             @"event":[Event eventWithName:kEventGoToAppStore]
+                             @"event":kEventGoToAppStore.event
     };
     
     NSDictionary *model2 = @{@"reuseIdentifier":@"BasicTableCell",
                             @"icon":@"icon_rate",
                             @"title":@"评分",
-                             @"event":[Event eventWithName:kEventAppStoreRate]
+                             @"event":kEventAppStoreRate.event
     };
     
     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];

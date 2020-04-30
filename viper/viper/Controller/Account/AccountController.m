@@ -48,7 +48,7 @@
     [self hideBackBarButtonItemTitle];
     self.title = @"";
     
-    [self.resultMapping registerSelector:@selector(reloadTableView:) forKey:kEventViewDidLoad];
+    [self.resultMapping registerSelector:@selector(reloadData:) forKey:kEventViewDidLoad];
     
     [self sendEvent:kEventViewDidLoad];
 }

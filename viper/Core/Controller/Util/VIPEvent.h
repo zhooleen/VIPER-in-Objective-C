@@ -37,6 +37,13 @@
 
 @end
 
+/**
+ 简化Event创建代码：kEventDoSomething.event
+ */
+@interface NSString (VIPEvent)
+@property (strong , nonatomic, readonly) id<Event> event;
+@end
+
 
 /**
  常见的事件

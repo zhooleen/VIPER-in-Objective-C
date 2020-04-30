@@ -25,13 +25,13 @@
     NSDictionary *model1 = @{@"reuseIdentifier":@"BasicTableCell",
                             @"icon":@"icon_settings",
                             @"title":@"设置",
-                             @"event":[Event eventWithName:kRoute2Settings]
+                             @"event":kRoute2Settings.event
     };
     
     NSDictionary *model2 = @{@"reuseIdentifier":@"BasicTableCell",
                             @"icon":@"icon_about",
                             @"title":@"关于",
-                             @"event":[Event eventWithName:kRoute2About]
+                             @"event":kRoute2About.event
     };
 
     

@@ -24,12 +24,12 @@
 
     NSDictionary *model1 = @{@"reuseIdentifier":@"ActionTableCell",
                             @"title":@"切换用户",
-                             @"event":[Event eventWithName:kEventSwitchUser]
+                             @"event":kEventSwitchUser.event
     };
     
     NSDictionary *model2 = @{@"reuseIdentifier":@"ActionTableCell",
                             @"title":@"退出登录",
-                             @"event":[Event eventWithName:kEventSignOut]
+                             @"event":kEventSignOut.event
     };
     
     id<SectionViewModel> area1 = @{}.proxy;

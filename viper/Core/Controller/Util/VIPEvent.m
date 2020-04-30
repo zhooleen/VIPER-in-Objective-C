@@ -36,6 +36,14 @@
 
 @end
 
+@implementation NSString (VIPEvent)
+
+-(id<Event>) event {
+    return [Event eventWithName:self];
+}
+
+@end
+
 EventName kEventViewDidLoad         =   @"kEventViewDidLoad";
 EventName kEventViewWillAppear      =   @"kEventViewWillAppear";
 EventName kEventViewDidAppear       =   @"kEventViewDidAppear";

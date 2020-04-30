@@ -42,6 +42,7 @@
 		2CF9C4C82413619400ECDEEA /* VIPBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4C72413619400ECDEEA /* VIPBuilder.m */; };
 		2CF9C4CB2413625200ECDEEA /* VIPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9C4CA2413625200ECDEEA /* VIPEvent.m */; };
 		5B5B6CB74C2EED3B5C9F5672 /* libPods-viper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E83A0E3282FB2BF45B57EC0B /* libPods-viper.a */; };
+		6806435B245AB14100388C48 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6806435A245AB14100388C48 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +124,7 @@
 		2CF9C4C72413619400ECDEEA /* VIPBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VIPBuilder.m; sourceTree = "<group>"; };
 		2CF9C4C92413625200ECDEEA /* VIPEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIPEvent.h; sourceTree = "<group>"; };
 		2CF9C4CA2413625200ECDEEA /* VIPEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPEvent.m; sourceTree = "<group>"; };
+		6806435A245AB14100388C48 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 		8378D3B5E9EB196FCB337079 /* Pods-viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper/Pods-viper.debug.xcconfig"; sourceTree = "<group>"; };
 		E83A0E3282FB2BF45B57EC0B /* libPods-viper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-viper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 		2C7D395D2413C1C50037FD25 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				6806435A245AB14100388C48 /* README.md */,
 				2C7D39612413C1C50037FD25 /* Assets.xcassets */,
 				2C7D39602413C1C50037FD25 /* Medusa.entitlements */,
 				2C7D395E2413C1C50037FD25 /* LaunchScreen.storyboard */,
@@ -438,6 +441,7 @@
 			files = (
 				2C7D3A0F2413C1C60037FD25 /* Info.plist in Resources */,
 				2C7D3A0B2413C1C60037FD25 /* Assets.xcassets in Resources */,
+				6806435B245AB14100388C48 /* README.md in Resources */,
 				2C7D3A0A2413C1C60037FD25 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
